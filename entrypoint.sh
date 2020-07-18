@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-cd /github/workspace
-
+git clone $2
+cd $1
 meson build
 meson test -C build -v
