@@ -1,4 +1,6 @@
 #!/bin/sh -l
 
-DIR=$(ls)
-echo $DIR
+cd /github/workspace
+
+meson build
+meson test -C build -v
