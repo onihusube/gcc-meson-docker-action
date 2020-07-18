@@ -1,5 +1,12 @@
 name: 'build & test'
 
+inputs:
+  name:
+    description: 'Name of target repository'
+    required: true
+  uri:
+    description: 'URI of target repository'
+    required: true
 outputs:
   result:
     description: 'boost.ut test report'
@@ -7,3 +14,5 @@ outputs:
 runs:
     using: 'docker'
     image: 'Dockerfile'
+    args:
+    - ${{ inputs.name, inputs.uri }}
