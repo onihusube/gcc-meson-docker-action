@@ -1,5 +1,9 @@
 name: 'build & test'
 
+outputs:
+  result:
+    description: 'boost.ut test report'
+
 runs:
     using: 'docker'
     image: 'Dockerfile'
