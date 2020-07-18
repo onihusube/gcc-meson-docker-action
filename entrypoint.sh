@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-DIR = $(ls)
+DIR=$(ls)
 echo $DIR
