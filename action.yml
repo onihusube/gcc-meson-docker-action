@@ -7,9 +7,6 @@ inputs:
   uri:
     description: 'URI of target repository'
     required: true
-outputs:
-  result:
-    description: 'boost.ut test report'
 
 runs:
     using: 'docker'
